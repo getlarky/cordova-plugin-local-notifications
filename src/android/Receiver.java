@@ -128,7 +128,7 @@ public class Receiver extends BroadcastReceiver {
 	        .setNumber(options.getBadge())
 	        .setTicker(options.getMessage())
 	        .setSmallIcon(options.getSmallIcon())
-	        .setLargeIcon(icon)
+	        // .setLargeIcon(icon)
 	        .setAutoCancel(options.getAutoCancel())
 	        .setOngoing(options.getOngoing());
 
