@@ -128,7 +128,8 @@ public class Builder {
                 .setAutoCancel(options.isAutoClear())
                 .setOngoing(options.isOngoing())
                 .setColor(options.getColor())
-                .setLights(options.getLedColor(), 100, 100);
+                .setLights(options.getLedColor(), 100, 100)
+                .setStyle(new NotificationCompat.BigTextStyle().bigText(options.getText()));
 
         if (sound != null) {
             builder.setSound(sound);
