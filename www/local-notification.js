@@ -319,6 +319,9 @@ exports.hasPermission = function (callback, scope) {
 exports.registerPermission = function (callback, scope) {
     this.core.registerPermission(callback, scope);
 };
+exports.deviceReady = function (event, callback){
+    this.core.deviceReady();
+};
 
 
 /****************

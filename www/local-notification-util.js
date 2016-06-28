@@ -297,11 +297,11 @@ exports.exec = function (action, args, callback, scope) {
  *********/
 
 // Called after 'deviceready' event
-channel.deviceready.subscribe(function () {
-    // Device is ready now, the listeners are registered
-    // and all queued events can be executed.
-    exec(null, null, 'LocalNotification', 'deviceready', []);
-});
+// channel.deviceready.subscribe(function () {
+//     // Device is ready now, the listeners are registered
+//     // and all queued events can be executed.
+//     exec(null, null, 'LocalNotification', 'deviceready', []);
+// });
 
 // Called before 'deviceready' event
 channel.onCordovaReady.subscribe(function () {

@@ -453,6 +453,11 @@ exports.registerPermission = function (callback, scope) {
     exec(fn, null, 'LocalNotification', 'registerPermission', []);
 };
 
+exports.deviceReady = function(event,callback){
+    exec(null, null, 'LocalNotification', 'deviceready', []);
+}
+
+
 
 /**********
  * EVENTS *
